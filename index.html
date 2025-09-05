@@ -8,12 +8,12 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50'/%3E%3C/svg%3E">
   <style>
     :root {
-      --bg: #ffffff;
+      --bg: #116736;
       --fg: #222;
       --muted: #5a5a5a;
       --brand: #0d7e3b; /* green */
       --brand-2: #d62828; /* red accent */
-      --radius: 16px;
+      --radius: 86px;
     }
     * { box-sizing: border-box; }
     html, body { height: 100%; }
@@ -29,6 +29,9 @@
       width: min(680px, 92vw);
       padding: clamp(20px, 4vw, 40px);
       text-align: center;
+      background-color: rgba(255,255,255,.90);
+      border-radius:8px;
+      margin-top:1em;
     }
     .logo {
       width: 180px;
@@ -37,6 +40,7 @@
       object-fit: cover;
       display: inline-block;
       box-shadow: 0 8px 20px rgba(0,0,0,.08);
+      margin-top:-7em;
     }
     h1 {
       font-size: clamp(1.6rem, 3.5vw, 2.2rem);
@@ -61,10 +65,11 @@
       background: #f5f5f5;
       color: var(--fg);
       padding: 14px 18px;
-      border-radius: var(--radius);
+      border-radius: 8px;
       border: 1px solid #e7e7e7;
       transition: transform .06s ease, background .2s ease, border-color .2s ease;
       font-weight: 600;
+      border: 3px solid var(--bg);
     }
     .btn:hover { background: #efefef; border-color: #dedede; }
     .btn:active { transform: translateY(1px); }
@@ -97,15 +102,15 @@
     <p class="sub">Join us on Socials</p>
 
     <nav class="links" aria-label="Primary links">
-      <a class="btn instagram" href="https://www.instagram.com" target="_blank" rel="noopener">
+      <a class="btn instagram" href="https://www.instagram.com/sherwoodpreschoolcroydon/" target="_blank" rel="noopener">
         <span class="dot" aria-hidden="true"></span>
         <span>Instagram</span>
       </a>
-      <a class="btn facebook" href="https://www.facebook.com" target="_blank" rel="noopener">
+      <a class="btn facebook" href="https://www.facebook.com/profile.php?id=100063706445977" target="_blank" rel="noopener">
         <span class="dot" aria-hidden="true"></span>
         <span>Facebook</span>
       </a>
-      <a class="btn youtube" href="https://www.youtube.com" target="_blank" rel="noopener">
+      <a class="btn youtube" href="https://www.youtube.com/@sherwoodpreschoolstories" target="_blank" rel="noopener">
         <span class="dot" aria-hidden="true"></span>
         <span>YouTube</span>
       </a>
@@ -113,8 +118,8 @@
         <span class="dot" aria-hidden="true"></span>
         <span>Website</span>
       </a>
-      <!-- Replace the email below with the real address if you have it -->
-      <a class="btn email" href="mailto:info@example.com">
+      
+      <a class="btn email" href="mailto:sherwoodpreschool1@gmail.com">
         <span class="dot" aria-hidden="true"></span>
         <span>Email us!</span>
       </a>
@@ -122,8 +127,6 @@
 
     <footer>
       <span>Community. Learning. Progress.</span>
-      <!-- Optional tiny credit; feel free to remove -->
-      <!-- <span> • </span><a class="credit" href="#">Powered by GitHub Pages</a> -->
     </footer>
   </main>
 </body>
