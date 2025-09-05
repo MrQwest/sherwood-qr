@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sherwood Preschool, Croydon</title>
+  <meta name="description" content="Quick links for Sherwood Preschool, Croydon — Instagram, Facebook, YouTube, website and email." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #222;
+      --muted: #5a5a5a;
+      --brand: #0d7e3b; /* green */
+      --brand-2: #d62828; /* red accent */
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      display: grid;
+      place-items: center;
+    }
+    .card {
+      width: min(680px, 92vw);
+      padding: clamp(20px, 4vw, 40px);
+      text-align: center;
+    }
+    .logo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: inline-block;
+      box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    }
+    h1 {
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      margin: 18px 0 6px;
+      letter-spacing: .2px;
+    }
+    p.sub {
+      margin: 0 0 22px;
+      color: var(--muted);
+    }
+    .links {
+      display: grid;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      background: #f5f5f5;
+      color: var(--fg);
+      padding: 14px 18px;
+      border-radius: var(--radius);
+      border: 1px solid #e7e7e7;
+      transition: transform .06s ease, background .2s ease, border-color .2s ease;
+      font-weight: 600;
+    }
+    .btn:hover { background: #efefef; border-color: #dedede; }
+    .btn:active { transform: translateY(1px); }
+    .btn svg { width: 22px; height: 22px; flex: 0 0 auto; }
+    .btn.instagram { --accent: #c13584; }
+    .btn.facebook { --accent: #1877f2; }
+    .btn.youtube { --accent: #ff0000; }
+    .btn.website { --accent: var(--brand); }
+    .btn.email { --accent: #333; }
+    .btn .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(0,0,0,.04); }
+    footer {
+      margin-top: 26px;
+      font-size: .9rem;
+      color: var(--muted);
+    }
+    .credit { opacity: .7; text-decoration: none; color: inherit; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0b0b0b; --fg: #f4f4f4; --muted: #b8b8b8; }
+      body { background: radial-gradient(1000px 600px at 50% -80%, rgba(255,255,255,.08), transparent), var(--bg); }
+      .btn { background: #141414; border-color: #1f1f1f; }
+      .btn:hover { background: #161616; border-color: #2a2a2a; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <img class="logo" alt="Sherwood Pre-School logo" src="https://multiplelinks-images.s3.amazonaws.com/RxqVtv.jpg" />
+
+    <h1>Sherwood Preschool, Croydon</h1>
+    <p class="sub">Join us on Socials</p>
+
+    <nav class="links" aria-label="Primary links">
+      <a class="btn instagram" href="https://www.instagram.com" target="_blank" rel="noopener">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Instagram</span>
+      </a>
+      <a class="btn facebook" href="https://www.facebook.com" target="_blank" rel="noopener">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Facebook</span>
+      </a>
+      <a class="btn youtube" href="https://www.youtube.com" target="_blank" rel="noopener">
+        <span class="dot" aria-hidden="true"></span>
+        <span>YouTube</span>
+      </a>
+      <a class="btn website" href="https://sherwoodpreschoolcroydon.co.uk" target="_blank" rel="noopener">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Website</span>
+      </a>
+      <!-- Replace the email below with the real address if you have it -->
+      <a class="btn email" href="mailto:info@example.com">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Email us!</span>
+      </a>
+    </nav>
+
+    <footer>
+      <span>Community. Learning. Progress.</span>
+      <!-- Optional tiny credit; feel free to remove -->
+      <!-- <span> • </span><a class="credit" href="#">Powered by GitHub Pages</a> -->
+    </footer>
+  </main>
+</body>
+</html>
